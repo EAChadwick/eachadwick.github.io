@@ -23,8 +23,3 @@ navigation:
 
 header:
   nav: navigation
-
-collections:
-  pages:
-    output: true
-    permalink: /:name/

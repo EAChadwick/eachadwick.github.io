@@ -1,9 +1,9 @@
 ---
-layout: default
-title: About
+layout: home
+author_profile: true
+title: "Home"
+permalink: /
 ---
-
-# Eric Chadwick
 
 Welcome! I’m Eric Chadwick, a [your profession/role].  
 I focus on [your specialties or research interests].  

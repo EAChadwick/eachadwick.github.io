@@ -10,7 +10,7 @@ plugins:
   - jekyll-include-cache
 exclude: ["README.md"]
 
-nav:
+navigation:
   - title: "About"
     url: /about/
   - title: "Projects"

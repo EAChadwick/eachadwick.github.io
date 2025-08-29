@@ -11,11 +11,6 @@ plugins:
 
 exclude: ["README.md"]
 
-collections:
-  pages:
-    output: true
-    permalink: /:name/
-
 navigation:
   - title: "About"
     url: /about/
@@ -28,3 +23,8 @@ navigation:
 
 header:
   nav: navigation
+
+collections:
+  pages:
+    output: true
+    permalink: /:name/

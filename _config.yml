@@ -1,0 +1,9 @@
+title: "Eric A. Chadwick"
+email: "eachadwick@proton.me"
+description: >-
+  Research-focused portfolio and CV.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: ""     # the base hostname & protocol for your site
+theme: minima
+markdown: kramdown
+exclude: ["README.md"]

@@ -4,7 +4,7 @@ description: >-
   Research-focused portfolio and CV.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: ""     # the base hostname & protocol for your site
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes@latest"
 markdown: kramdown
 plugins:
   - jekyll-include-cache
@@ -22,6 +22,5 @@ navigation:
   - title: "CV (PDF)"
     url: /assets/EricChadwick_CV_2025.pdf
 
-  # Show the navigation menu in the header
 header:
   nav: navigation

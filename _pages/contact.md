@@ -7,6 +7,6 @@ author_profile: true
 
 # Contact
 
-Email: [your.email@example.com](mailto:your.email@example.com)
+Email: [eachadwick@proton.me](mailto:eachadwick@proton.me)
 
-Or find me on [LinkedIn](#) | [GitHub](#)
+Or find me on [Google Scholar](https://scholar.google.com/citations?user=iBAqwZoAAAAJ&hl=en) | [LinkedIn]([#](https://www.linkedin.com/in/eric-chadwick/))

@@ -9,3 +9,15 @@ markdown: kramdown
 plugins:
   - jekyll-include-cache
 exclude: ["README.md"]
+
+nav:
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Publications"
+    url: /publications/
+  - title: "Contact"
+    url: /contact/
+  - title: "CV (PDF)"
+    url: /assets/EricChadwick_CV_2025.pdf

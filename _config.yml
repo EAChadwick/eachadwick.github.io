@@ -4,6 +4,6 @@ description: >-
   Research-focused portfolio and CV.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: ""     # the base hostname & protocol for your site
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 markdown: kramdown
 exclude: ["README.md"]

@@ -21,3 +21,7 @@ navigation:
     url: /contact/
   - title: "CV (PDF)"
     url: /assets/EricChadwick_CV_2025.pdf
+
+  # Show the navigation menu in the header
+header:
+  nav: navigation

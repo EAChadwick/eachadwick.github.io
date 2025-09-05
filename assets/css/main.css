@@ -2151,27 +2151,6 @@ input, select, textarea {
 				width: 100%;
 			}
 
-	/* Thumbs: no gray overlay by default */
-	.image.thumb:before {
-	    background: none !important;
-	    opacity: 0 !important;
-	}
-	
-	/* Keep hover overlay effect */
-	.image.thumb:hover:before {
-	    background: url("images/overlay.png"), url("images/overlay.png");
-	    opacity: 1 !important;
-	}
-	
-	/* Add a subtle frame around thumbs */
-	.image.thumb img {
-	    border: 3px solid #ccc;       /* frame color */
-	    padding: 4px;                 /* spacing inside frame */
-	    background: #fff;             /* frame background */
-	    box-shadow: 4px 4px 10px rgba(0,0,0,0.15); /* offset shadow */
-	    border-radius: 6px;           /* rounded corners (optional) */
-	}
-
 /* List */
 
 	ol {

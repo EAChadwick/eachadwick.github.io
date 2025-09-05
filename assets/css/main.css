@@ -2037,6 +2037,15 @@ input, select, textarea {
 
 /* Image */
 
+	.profile-pic {
+  		width: 150px;       /* adjust size */
+  		height: 150px;      /* must match width */
+  		border-radius: 50%; /* makes it circular */
+  		object-fit: cover;  /* crops without distortion */
+  		display: block;     /* removes extra spacing */
+  		margin: 0 auto;     /* centers it if needed */
+	}
+
 	.image {
 		border-radius: 0.35em;
 		border: 0;

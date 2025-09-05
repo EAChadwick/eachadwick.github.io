@@ -2038,8 +2038,8 @@ input, select, textarea {
 /* Image */
 
 	.image img.profile-pic {
-  			width: 150px;          /* default size */
-  			height: 150px;         /* keeps it square */
+  			width: 175px;          /* default size */
+  			height: 175px;         /* keeps it square */
   			max-width: 40vw;       /* scale up to 40% of viewport width on large screens */
   			aspect-ratio: 1 / 1;     /* keeps it square */
   			border-radius: 100%;      /* perfect circle */

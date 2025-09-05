@@ -2037,15 +2037,6 @@ input, select, textarea {
 
 /* Image */
 
-	.background-image {
-	    width: 100%;
-	    min-height: 400px;              /* height of the hero area */
-	    background-image: url("images/bg.jpg");
-	    background-size: cover;         /* fills container, crops excess */
-	    background-position: center;    /* keeps main part visible */
-	    background-repeat: no-repeat;
-	}
-
 	.image img.profile-pic {
   			width: 175px;          /* default size */
   			height: 175px;         /* keeps it square */

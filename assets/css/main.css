@@ -2151,6 +2151,21 @@ input, select, textarea {
 				width: 100%;
 			}
 
+	/* 1. Remove gray overlay for thumbs */
+	.image.thumb:before {
+	    background: none !important;  /* no overlay */
+	    opacity: 0 !important;        /* fully transparent */
+	}
+	
+	/* 2. Add a subtle frame around thumb images */
+	.image.thumb img {
+	    border: 3px solid #ccc;       /* frame color */
+	    padding: 4px;                 /* space inside frame */
+	    background: #fff;             /* frame background */
+	    box-shadow: 4px 4px 10px rgba(0,0,0,0.15); /* offset frame */
+	    border-radius: 6px;           /* optional rounded corners */
+	}
+
 /* List */
 
 	ol {

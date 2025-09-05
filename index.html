@@ -32,7 +32,7 @@
 						<header class="major">
 							<h2>Seeking Employment!</h2>
 						</header>
-						<p>I am currently seeking employment as a post-doc or scientist in the field of Imaging and/or Electrochemistry. My specialties include image processing of 2D/3D/4D X-ray images of electrochemical devices and moouse lungs. Please check the links below for my publications and more information!</p>
+						<p>I am currently seeking employment as a post-doc or scientist in the field of Imaging and/or Electrochemistry. My specialties include image processing of 2D/3D/4D X-ray images of electrochemical devices and mouse lungs. Please check the links below for my publications and more information!</p>
 						<ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
 						</ul>
@@ -82,19 +82,22 @@
 					<section id="three">
 						<h2>Get In Touch</h2>
 						<p>If you would like to get in touch, please use the following contact form or contact me directly via e-mail.</p>
-						<div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
+						<form method="POST" action="https://formspree.io/f/{your_form_id}">
+  							<div class="row gtr-uniform gtr-50">
+    							<div class="col-6 col-12-xsmall">
+      								<input type="text" name="name" id="name" placeholder="Name" required />
+   								</div>
+    							<div class="col-6 col-12-xsmall">
+      								<input type="email" name="email" id="email" placeholder="Email" required />
+    							</div>
+    							<div class="col-12">
+      								<textarea name="message" id="message" placeholder="Message" rows="4" required></textarea>
+    							</div>
+  							</div>
+  							<ul class="actions">
+    					<li><input type="submit" value="Send Message" /></li>
+  							</ul>
+						</form>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
 									<li>
@@ -452,6 +455,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
 
 
 

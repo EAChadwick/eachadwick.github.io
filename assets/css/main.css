@@ -2134,10 +2134,10 @@ input, select, textarea {
 			}
 
 		.profile-pic {
-  			width: 30%;              /* scales with screen size */
+  			width: 50%;              /* scales with screen size */
   			max-width: 200px;        /* optional upper limit */
   			aspect-ratio: 1 / 1;     /* keeps it square */
-  			border-radius: 50%;      /* perfect circle */
+  			border-radius: 100%;      /* perfect circle */
   			object-fit: cover;       /* fills the circle */
   			display: block;
   			margin: 0 auto;          /* center if needed */

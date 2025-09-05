@@ -2599,7 +2599,7 @@ input, select, textarea {
 		left: 0;
 		padding: 8em 4em;
 		position: fixed;
-		text-align: left;
+		text-align: right;
 		top: 0;
 		width: 35%;
 	}
@@ -2635,7 +2635,7 @@ input, select, textarea {
 			margin: 0;
 		}
 
-		#header .image.avatar {
+		#header .image.profile-pic {
 			margin: 0 0 1em 0;
 			width: 6.25em;
 		}

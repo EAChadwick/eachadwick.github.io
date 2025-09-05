@@ -2589,66 +2589,60 @@ input, select, textarea {
 
 /* Header */
 
+	/* Full-width header with background image */
 	#header {
+	    position: relative;             /* allows overlay and content positioning */
+	    width: 100%;
+	    min-height: 600px;              /* adjust to show more/less background */
 	    display: flex;
 	    flex-direction: column;
-	    align-items: flex-end;          /* keeps your text on the right */
-	    justify-content: space-between;
-	
-	    /* Full background */
-	    background-image: url("images/overlay.png"), url("images/bg.jpg");
-	    background-position: top left, center;
-	    background-repeat: repeat, no-repeat;
-	    background-size: auto, cover;   /* overlay keeps its size, bg fills the area */
-	
-	    color: rgba(255, 255, 255, 0.5);
-	
-	    /* Header sizing */
-	    width: 100%;                    /* make full width */
-	    min-height: 600px;              /* adjust as needed */
-	    position: relative;             /* instead of fixed, unless you want fixed sidebar */
+	    justify-content: center;        /* vertical center of inner */
+	    align-items: flex-end;          /* right-aligned content */
 	    padding: 4em;
+	    color: rgba(255, 255, 255, 0.9);
 	
+	    /* Background image + optional overlay PNG */
+	    background-image: url("images/bg.jpg");
+	    background-size: cover;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	}
+	
+	/* Optional semi-transparent overlay */
+	#header .overlay {
+	    content: '';
+	    position: absolute;
+	    top: 0; left: 0; right: 0; bottom: 0;
+	    background: rgba(0, 0, 0, 0.3); /* adjust darkness */
+	    z-index: 0;
+	}
+	
+	/* Inner content (profile + text) */
+	#header .inner {
+	    position: relative;
+	    z-index: 1;                     /* above overlay */
 	    text-align: right;
-	    overflow: hidden;               /* crop anything outside */
+	}
+	
+	/* Profile picture */
+	.profile-pic {
+	    width: 150px;                    /* adjust size */
+	    max-width: 25%;                  /* scales on smaller screens */
+	    aspect-ratio: 1/1;               /* keeps it square */
+	    border-radius: 50%;              /* circular */
+	    object-fit: cover;
+	    display: block;
+	    margin: 0 0 1em 0;
+	}
+	
+	/* Header text */
+	#header h1 {
+	    color: rgba(255, 255, 255, 0.9);
+	    font-size: 1.5em;
+	    line-height: 1.6em;
+	    margin: 0;
 	}
 
-
-		#header > * {
-			-moz-flex-shrink: 0;
-			-webkit-flex-shrink: 0;
-			-ms-flex-shrink: 0;
-			flex-shrink: 0;
-			width: 100%;
-		}
-
-		#header > .inner {
-			-moz-flex-grow: 1;
-			-webkit-flex-grow: 1;
-			-ms-flex-grow: 1;
-			flex-grow: 1;
-			margin: 0 0 2em 0;
-		}
-
-		#header strong, #header b {
-			color: #ffffff;
-		}
-
-		#header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
-		}
-
-		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
-			font-size: 1.35em;
-			line-height: 1.75em;
-			margin: 0;
-		}
-
-		#header .image.profile-pic {
-			margin: 0 0 1em 0;
-			width: 6.25em;
-		}
 
 /* Footer */
 

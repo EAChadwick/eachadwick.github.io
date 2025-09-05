@@ -2040,7 +2040,7 @@ input, select, textarea {
 	.profile-pic {
   		width: 150px;       /* adjust size */
   		height: 150px;      /* must match width */
-  		border-radius: 50%; /* makes it circular */
+  		border-radius: 100%; /* makes it circular */
   		object-fit: cover;  /* crops without distortion */
   		display: block;     /* removes extra spacing */
   		margin: 0 auto;     /* centers it if needed */

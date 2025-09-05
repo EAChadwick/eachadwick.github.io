@@ -2590,6 +2590,7 @@ input, select, textarea {
 /* Header */
 
 /* Header */
+/* Header */
 	#header {
 	    display: flex;
 	    flex-direction: column;
@@ -2600,7 +2601,7 @@ input, select, textarea {
 	    background-image: url("images/overlay.png"), url("images/bg.jpg");
 	    background-position: top left, center;
 	    background-repeat: repeat, no-repeat;
-	    background-size: auto, cover;  /* overlay keeps size, bg fills area */
+	    background-size: auto, cover;  /* overlay keeps its size, bg fills sidebar */
 	
 	    color: rgba(255, 255, 255, 0.5);
 	
@@ -2608,7 +2609,7 @@ input, select, textarea {
 	    position: fixed;
 	    top: 0;
 	    left: 0;
-	    width: 35%;                   /* keep original sidebar width */
+	    width: 35%;
 	    height: 100%;
 	    padding: 8em 4em;
 	    text-align: right;
@@ -2626,7 +2627,7 @@ input, select, textarea {
 	    margin: 0 0 2em 0;
 	    display: flex;
 	    flex-direction: column;
-	    justify-content: center;       /* vertical center content */
+	    justify-content: center;       /* vertically center content */
 	}
 	
 	/* Text colors */
@@ -2646,9 +2647,10 @@ input, select, textarea {
 	#header .image.profile-pic {
 	    margin: 0 0 1em 0;
 	    width: 6.25em;
-	    border-radius: 50%;          /* make circular */
+	    border-radius: 50%;          /* circular photo */
 	    object-fit: cover;
 	}
+
 
 
 

@@ -2037,6 +2037,16 @@ input, select, textarea {
 
 /* Image */
 
+	.image img.profile-pic {
+  			width: 50%;              /* scales with screen size */
+  			max-width: 200px;        /* optional upper limit */
+  			aspect-ratio: 1 / 1;     /* keeps it square */
+  			border-radius: 100%;      /* perfect circle */
+  			object-fit: cover;       /* fills the circle */
+  			display: block;
+  			margin: 0 auto;          /* center if needed */
+		}
+
 	.image {
 		border-radius: 0.35em;
 		border: 0;
@@ -2132,16 +2142,6 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
-
-		.profile-pic {
-  			width: 50%;              /* scales with screen size */
-  			max-width: 200px;        /* optional upper limit */
-  			aspect-ratio: 1 / 1;     /* keeps it square */
-  			border-radius: 100%;      /* perfect circle */
-  			object-fit: cover;       /* fills the circle */
-  			display: block;
-  			margin: 0 auto;          /* center if needed */
-		}
 
 /* List */
 

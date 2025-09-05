@@ -2152,6 +2152,13 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image img.background {
+  			background-image: url("images/bg.jpg");
+  			background-size: cover;     /* fills the space without stretching */
+  			background-position: center; /* keeps it centered */
+  			background-repeat: no-repeat; /* no tiling */
+		}	
+
 /* List */
 
 	ol {

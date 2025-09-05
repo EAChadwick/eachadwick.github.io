@@ -2039,7 +2039,7 @@ input, select, textarea {
 
 	.image img.profile-pic {
   			width: 100%;              /* scales with screen size */
-  			max-width: 200px;        /* optional upper limit */
+  			max-width: 500px;        /* optional upper limit */
   			aspect-ratio: 1 / 1;     /* keeps it square */
   			border-radius: 100%;      /* perfect circle */
   			object-fit: cover;       /* fills the circle */

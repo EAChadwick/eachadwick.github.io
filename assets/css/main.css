@@ -2037,18 +2037,22 @@ input, select, textarea {
 
 /* Image */
 
-	.bg-container {
+	/* Make sure the container has a fixed height */
+	.image {
+	  position: relative;   /* keep your existing styles */
 	  width: 100%;
-	  height: 400px; /* define the space you want to fill */
-	  overflow: hidden; /* crop anything outside */
+	  height: 400px;        /* adjust this to how tall you want the background section */
+	  overflow: hidden;     /* crop excess */
 	}
 	
-	.bg-container img.background {
+	/* Make the background image fill the container without stretching */
+	.image img.background {
 	  width: 100%;
 	  height: 100%;
-	  object-fit: cover; /* fills container, crops excess, no stretching */
+	  object-fit: cover;    /* scales and crops as needed */
 	  display: block;
 	}
+
 
 	.image img.profile-pic {
   			width: 175px;          /* default size */

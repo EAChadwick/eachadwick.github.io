@@ -2037,6 +2037,19 @@ input, select, textarea {
 
 /* Image */
 
+	.bg-container {
+	  width: 100%;
+	  height: 400px; /* define the space you want to fill */
+	  overflow: hidden; /* crop anything outside */
+	}
+	
+	.bg-container img.background {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover; /* fills container, crops excess, no stretching */
+	  display: block;
+	}
+
 	.image img.profile-pic {
   			width: 175px;          /* default size */
   			height: 175px;         /* keeps it square */
@@ -2151,13 +2164,6 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
-
-		.image img.background {
-  			width: 100%;         /* fill the container width */
-  			height: 100%;        /* fill the container height */
-  			object-fit: cover;   /* scale and crop without stretching */
-  			display: block;
-		}
 
 /* List */
 

@@ -2151,19 +2151,25 @@ input, select, textarea {
 				width: 100%;
 			}
 
-	/* 1. Remove gray overlay for thumbs */
+	/* Thumbs: no gray overlay by default */
 	.image.thumb:before {
-	    background: none !important;  /* no overlay */
-	    opacity: 0 !important;        /* fully transparent */
+	    background: none !important;
+	    opacity: 0 !important;
 	}
 	
-	/* 2. Add a subtle frame around thumb images */
+	/* Keep hover overlay effect */
+	.image.thumb:hover:before {
+	    background: url("images/overlay.png"), url("images/overlay.png");
+	    opacity: 1 !important;
+	}
+	
+	/* Add a subtle frame around thumbs */
 	.image.thumb img {
 	    border: 3px solid #ccc;       /* frame color */
-	    padding: 4px;                 /* space inside frame */
+	    padding: 4px;                 /* spacing inside frame */
 	    background: #fff;             /* frame background */
-	    box-shadow: 4px 4px 10px rgba(0,0,0,0.15); /* offset frame */
-	    border-radius: 6px;           /* optional rounded corners */
+	    box-shadow: 4px 4px 10px rgba(0,0,0,0.15); /* offset shadow */
+	    border-radius: 6px;           /* rounded corners (optional) */
 	}
 
 /* List */

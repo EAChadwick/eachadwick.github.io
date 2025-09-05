@@ -2037,7 +2037,7 @@ input, select, textarea {
 
 /* Image */
 
-	.background-section {
+	.background-image {
 	    width: 100%;
 	    min-height: 400px;              /* height of the hero area */
 	    background-image: url("images/bg.jpg");
@@ -2054,7 +2054,6 @@ input, select, textarea {
   			border-radius: 100%;      /* perfect circle */
   			object-fit: cover;       /* fills the circle */
   			display: block;
-  			margin: 0 auto;          /* center if needed */
 		}
 
 	.image.ApplicationPhoto,

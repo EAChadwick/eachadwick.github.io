@@ -2048,6 +2048,14 @@ input, select, textarea {
   			margin: 0 auto;          /* center if needed */
 		}
 
+	.image.ApplicationPhoto,
+	.image.ApplicationPhoto:before {
+  		background: none !important;
+  		border: none !important;
+  		border-radius: 0 !important;
+  		box-shadow: none !important;
+		}
+
 	.image {
 		border-radius: 0.35em;
 		border: 0;

@@ -2038,12 +2038,13 @@ input, select, textarea {
 /* Image */
 
 	.profile-pic {
-  		width: 150px;       /* adjust size */
-  		height: 150px;      /* must match width */
-  		border-radius: 100%; /* makes it circular */
-  		object-fit: cover;  /* crops without distortion */
-  		display: block;     /* removes extra spacing */
-  		margin: 0 auto;     /* centers it if needed */
+  		width: 30%;              /* scales with screen size */
+  		max-width: 200px;        /* optional upper limit */
+  		aspect-ratio: 1 / 1;     /* keeps it square */
+  		border-radius: 50%;      /* perfect circle */
+  		object-fit: cover;       /* fills the circle */
+  		display: block;
+  		margin: 0 auto;          /* center if needed */
 	}
 
 	.image {
@@ -2611,7 +2612,7 @@ input, select, textarea {
 		left: 0;
 		padding: 8em 4em;
 		position: fixed;
-		text-align: right;
+		text-align: left;
 		top: 0;
 		width: 35%;
 	}

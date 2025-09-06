@@ -18,7 +18,7 @@
 					<a href="#" class="image ApplicationPhoto">
 						<img src="images/ApplicationPhoto.jpg" alt="Profile Photo" class="profile-pic" />
 					</a>
-					<h1><strong>Welcome!</strong><br />I am Eric A. Chadwick, an Engineer and Researcher from Canada, 
+					<h1><strong>Welcome!</strong><br /> I am Eric A. Chadwick, an Engineer and Researcher from Canada, 
 					currently located in Heidelberg, Germany</h1>
 				</div>
 			</header>
@@ -28,14 +28,48 @@
 
 				<!-- One -->
 					<section id="one">
-						<header class="major">
-							<h2>Seeking Employment!</h2>
-						</header>
-						<p> I am currently seeking employment as a post-doc or scientist in the field of Imaging and/or Electrochemistry. My specialties include image processing of 2D/3D/4D X-ray images of electrochemical devices and mouse lungs. Please check the links below for my publications and more information!</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
+					  <header class="major">
+					    <h2>Seeking Employment!</h2>
+					  </header>
+					  <p>
+					    I am currently seeking employment as a post-doc or scientist in the field of Imaging and/or Electrochemistry. 
+					    My specialties include image processing of 2D/3D/4D X-ray images of electrochemical devices and mouse lungs. 
+					    Please check the links below for my publications and more information!
+					  </p>
+					
+					  <ul class="actions">
+					    <li>
+					      <a href="#" id="cv-toggle" class="button">
+					        ▶ Curriculum Vitae
+					      </a>
+					    </li>
+					  </ul>
+					
+					  <!-- Hidden CV section -->
+					  <div id="cv-content" style="display: none; margin-top: 1em;">
+					    <p><b>Eric A. Chadwick</b></p>
+					    <p>PhD Candidate, University of Toronto<br>
+					       Research: Microscale transport in PEM fuel cells</p>
+					    <p>[Insert CV content here, or embed a PDF]</p>
+					  </div>
 					</section>
+					
+					<script>
+					const cvToggle = document.getElementById("cv-toggle");
+					const cvContent = document.getElementById("cv-content");
+					
+					cvToggle.addEventListener("click", function(e) {
+					  e.preventDefault(); // stops page jump
+					  const isOpen = cvContent.style.display === "block";
+					
+					  // Toggle visibility
+					  cvContent.style.display = isOpen ? "none" : "block";
+					
+					  // Update arrow
+					  cvToggle.textContent = (isOpen ? "▶" : "▼") + " Curriculum Vitae";
+					});
+					</script>
+
 
 				<!-- Two -->
 					<section id="two">
@@ -48,31 +82,31 @@
 							</article>
 								
 							<article class="col-6 col-12-xsmall work-item">
-							  <a href="https://doi.org/10.1016/j.applthermaleng.2025.126442" target="_blank" class="image fit thumb"><img src="images/thumbs/ATE2025.png" alt="" /></a>
+							  <a href="https://doi.org/10.1016/j.applthermaleng.2025.126442" target="_blank" class="image fit"><img src="images/thumbs/ATE2025.png" alt="" /></a>
 							  <h3><a href="https://doi.org/10.1016/j.applthermaleng.2025.126442" target="_blank">Development of an additively manufactured vapor chamber using hybrid wick structures</h3></a>
 							  <p><b>Authors: </b><i>Yann Dumay, Eric A Chadwick, Maxime Napoléon, Christian Seide, Bjoern Ortlepp, Dominik Scheid, Nico Blessing, Volker P Schulz</i> <br /><b>Published: </b><i>15 August 2025, Applied Thermal Engineering</i></p>
 							</article>
 							
 							<article class="col-6 col-12-xsmall work-item">
-							  <a href="https://doi.org/10.1016/j.apenergy.2025.125760" target="_blank" class="image fit thumb"><img src="images/thumbs/AE2025.png" alt="" /></a>
+							  <a href="https://doi.org/10.1016/j.apenergy.2025.125760" target="_blank" class="image fit"><img src="images/thumbs/AE2025.png" alt="" /></a>
 							  <h3><a href="https://doi.org/10.1016/j.apenergy.2025.125760" target="_blank">Biomimetic auxiliary channels enhance oxygen delivery and water removal in polymer electrolyte membrane fuel cells</h3></a>
 							  <p><b>Authors: </b><i>Eric A Chadwick, Pranay Shrestha, Harsharaj B Parmar, Aimy Bazylak, Volker P Schulz</i> <br /> <b>Published: </b><i>01 July 2025, Applied Energy</i></p>
 							</article>
 							
 							<article class="col-6 col-12-xsmall work-item">
-							  <a href="https://doi.org/10.3389/fbioe.2022.891407" target="_blank" class="image fit thumb"><img src="images/thumbs/FBB2022.png" alt="" /></a>
+							  <a href="https://doi.org/10.3389/fbioe.2022.891407" target="_blank" class="image fit"><img src="images/thumbs/FBB2022.png" alt="" /></a>
 							  <h3><a href="https://doi.org/10.3389/fbioe.2022.891407" target="_blank">Cell inertia: Predicting cell distributions in lung vasculature to optimize re-endothelialization</h3></a>
 							  <p><b>Authors: </b><i>Jason KD Chan, Eric A Chadwick, Daisuke Taniguchi, Mohammadali Ahmadipour, Takaya Suzuki, David Romero, Cristina Amon, Thomas K Waddell, Golnaz Karoubi, Aimy Bazylak</i> <br /><b>Published: </b><i>07 March 2022, Frontiers in Bioengineering and Biotechnology</i></p>
 							</article>
 							
 							<article class="col-6 col-12-xsmall work-item">
-							  <a href="https://doi.org/10.1029/2021WR031509" target="_blank" class="image fit thumb"><img src="images/thumbs/WRR2022.png" alt="" /></a>
+							  <a href="https://doi.org/10.1029/2021WR031509" target="_blank" class="image fit"><img src="images/thumbs/WRR2022.png" alt="" /></a>
 							  <h3><a href="https://doi.org/10.1029/2021WR031509" target="_blank">Incorporating the effect of gravity into image‐based drainage simulations on volumetric images of porous media</h3></a>
 							  <p><b>Authors: </b><i>Eric A Chadwick, Lucas H Hammen, Volker P Schulz, Aimy Bazylak, Marios A Ioannidis, Jeff T Gostick</i> <br /><b>Published: </b><i>27 April 2022, Water Reesources Research</i></p>
 							</article>
 							
 							<article class="col-6 col-12-xsmall work-item">
-							  <a href="https://doi.org/10.1371/journal.pcbi.1008930" target="_blank" class="image fit thumb"><img src="images/thumbs/PLOS2021.png" alt="" /></a>
+							  <a href="https://doi.org/10.1371/journal.pcbi.1008930" target="_blank" class="image fit"><img src="images/thumbs/PLOS2021.png" alt="" /></a>
 							  <h3><a href="https://doi.org/10.1371/journal.pcbi.1008930" target="_blank">Vessel network extraction and analysis of mouse pulmonary vasculature via X-ray micro-computed tomographic imaging</h3><a/>
 							  <p><b>Authors: </b><i>Eric A Chadwick, Takaya Suzuki, Michael G George, David A Romero, Cristina Amon, Thomas K Waddell, Golnaz Karoubi, Aimy Bazylak</i> <br /><b>Published: </b><i>20 April 2021, PLoS Computational Biology</i></p>
 							</article>
@@ -490,6 +524,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
 
 
 

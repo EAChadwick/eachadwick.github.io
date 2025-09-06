@@ -3228,10 +3228,3 @@ input, select, textarea {
 
 	}
 
-	#cv-content canvas {
-	  display: block;
-	  margin: 0 auto 10px auto; /* only 10px between pages */
-	  max-width: 100%; /* keeps it responsive */
-	  height: auto;
-	}
-

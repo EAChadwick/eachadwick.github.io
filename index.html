@@ -67,7 +67,7 @@
 					
 					    for (let i = 1; i <= pdf.numPages; i++) {
 					      const page = await pdf.getPage(i);
-					      const viewport = page.getViewport({ scale: 1.25 }); // adjust zoom here
+					      const viewport = page.getViewport({ scale: 3 }); // adjust zoom here
 					      const canvas = document.createElement("canvas");
 					      const context = canvas.getContext("2d");
 					      canvas.height = viewport.height;
@@ -538,6 +538,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
 
 
 

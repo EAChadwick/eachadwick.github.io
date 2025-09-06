@@ -47,10 +47,12 @@
 					
 					  <!-- Hidden CV section -->
 					  <div id="cv-content" style="display: none; margin-top: 1em;">
-					    <p><b>Eric A. Chadwick</b></p>
-					    <p>PhD Candidate, University of Toronto<br>
-					       Research: Microscale transport in PEM fuel cells</p>
-					    <p>images/EricChadwick_CV_2025.pdf</p>
+					    <embed 
+					      src="files/CV.pdf" 
+					      type="application/pdf" 
+					      width="100%" 
+					      height="600px" 
+					      style="border: 1px solid #ccc; border-radius: 8px;" />
 					  </div>
 					</section>
 					
@@ -59,7 +61,7 @@
 					const cvContent = document.getElementById("cv-content");
 					
 					cvToggle.addEventListener("click", function(e) {
-					  e.preventDefault(); // stops page jump
+					  e.preventDefault(); // prevent jump
 					  const isOpen = cvContent.style.display === "block";
 					
 					  // Toggle visibility
@@ -524,6 +526,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
 
 
 

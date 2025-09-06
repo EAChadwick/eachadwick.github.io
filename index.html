@@ -46,6 +46,17 @@
 					  <!-- CV will be rendered here -->
 					  <div id="cv-content" style="display:none; margin-top:1em;"></div>
 					</section>
+
+					<div id="cv-content" style="display:none; margin-top:1em;"></div>
+
+					<style>
+					#cv-content canvas {
+					  display: block;
+					  margin: 0 auto 10px auto; /* reduce whitespace */
+					  max-width: 100%;          /* responsive to container width */
+					  height: auto;
+					}
+					</style>
 					
 					<!-- Load PDF.js -->
 					<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
@@ -538,6 +549,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
 
 
 

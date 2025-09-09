@@ -108,22 +108,30 @@
 					<style>.videos {
 						  	.videos {
 							  display: grid;
-							  gap: 2rem;
+							  gap: 3rem;   /* space between video blocks */
 							}
 							
-							/* wrapper ensures all players scale the same */
+							.video-block {
+							  max-width: 900px;
+							  margin: 0 auto;
+							  text-align: center;   /* center titles/subtitles */
+							}
+							
+							.video-title {
+							  margin-bottom: 1rem;
+							  font-size: 1.25rem;
+							  font-weight: bold;
+							}
+							
 							.video-wrapper {
 							  position: relative;
 							  width: 100%;
-							  max-width: 900px;   /* optional max width */
-							  margin: 0 auto;
-							  aspect-ratio: 16 / 9;   /* modern browsers */
+							  aspect-ratio: 16 / 9;
 							  background: #000;
 							  border-radius: 8px;
 							  overflow: hidden;
 							}
 							
-							/* make the actual player fill the wrapper */
 							.video-wrapper iframe,
 							.video-wrapper video {
 							  position: absolute;
@@ -132,8 +140,14 @@
 							  width: 100%;
 							  height: 100%;
 							  border: 0;
-							  display: block;
 							}
+							
+							.subtitle {
+							  margin-top: 0.75rem;
+							  font-size: 0.95rem;
+							  color: #666;
+							}
+
 
 					</style>
 				
@@ -144,23 +158,26 @@
 					  </header>
 					
 					  <div class="videos">
+						<div class="video-block">
+      						<h3 class="video-title">Research Showcase: Canadian Light Sources</h3>
 					    <!-- YouTube embed (privacy-enhanced) -->
-						<div class="video-wrapper">
-						  <h3>Research Showcase: Canadian Light Sources</h3>
-						  <iframe
-						    src="https://www.youtube-nocookie.com/embed/UQRFR8anUQ8?rel=0&cc_load_policy=1&cc_lang_pref=en"
-							title="Interview — Fuel Cell Research"
-						    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						    allowfullscreen
-						    loading="lazy"></iframe>
-							<p class="subtitle">Research showcase video by Greg Basky at the Canadian Light Source in which I explain my research on biomimetic auxiliary channels.</p>
-						</div>
-					
-					    <div class="video-wrapper">
-					      <h3>Interview: Global News Regina</h3>
-					      <iframe src="https://globalnews.ca/video/embed/11208303/" allowfullscreen scrolling="no"></iframe>
-					      <p class="subtitle">Interview with Brendan Purdy from Global News Regina, discussing my research on biomimetic auxiliary channels.</p>
-					    </div>
+							<div class="video-wrapper">
+							  <iframe
+							    src="https://www.youtube-nocookie.com/embed/UQRFR8anUQ8?rel=0&cc_load_policy=1&cc_lang_pref=en"
+								title="Interview — Fuel Cell Research"
+							    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							    allowfullscreen
+							    loading="lazy"></iframe>
+								<p class="subtitle">Research showcase video by Greg Basky at the Canadian Light Source in which I explain my research on biomimetic auxiliary channels.</p>
+							</div>
+
+						<div class="video-block">
+      						<h3 class="video-title">Interview: Global News Regina</h3>
+						    <div class="video-wrapper">
+						      
+						      <iframe src="https://globalnews.ca/video/embed/11208303/" allowfullscreen scrolling="no"></iframe>
+						      <p class="subtitle">Interview with Brendan Purdy from Global News Regina, discussing my research on biomimetic auxiliary channels.</p>
+						    </div>
 					  </div>
 					</section>
 
@@ -582,6 +599,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
 
 
 

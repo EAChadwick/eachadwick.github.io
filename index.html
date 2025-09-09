@@ -37,65 +37,8 @@
 					    Please see my CV & publication list below, and links to my latest publications!
 					  </p>
 					
-					  <ul class="actions">
-					    <li>
-					      <a href="#" id="cv-toggle" class="button">▶ Curriculum Vitae</a>
-					    </li>
-					  </ul>
-					
-					  <!-- CV will be rendered here -->
-					  <div id="cv-content" style="display:none; margin-top:1em;"></div>
-					</section>
+					  <a href="files/CV.pdf" download class="download-btn">Download CV</a>
 
-					<div id="cv-content" style="display:none; margin-top:1em;"></div>
-
-					<style>
-					#cv-content canvas {
-					  display: block;
-					  margin: 0 auto 10px auto; /* reduce whitespace */
-					  max-width: 100%;          /* responsive to container width */
-					  height: auto;
-					}
-					</style>
-					
-					<!-- Load PDF.js -->
-					<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-					<script>
-					const cvToggle = document.getElementById("cv-toggle");
-					const cvContent = document.getElementById("cv-content");
-					
-					cvToggle.addEventListener("click", async function(e) {
-					  e.preventDefault();
-					
-					  const isOpen = cvContent.style.display === "block";
-					  cvContent.style.display = isOpen ? "none" : "block";
-					  cvToggle.textContent = (isOpen ? "▶" : "▼") + " Curriculum Vitae";
-					
-					  // If opening for the first time, render the PDF
-					  if (!isOpen && !cvContent.hasChildNodes()) {
-					    const url = "files/CV.pdf"; // <-- put your PDF path here
-					    const pdf = await pdfjsLib.getDocument(url).promise;
-					
-					    for (let i = 1; i <= pdf.numPages; i++) {
-					      const page = await pdf.getPage(i);
-					      const viewport = page.getViewport({ scale: 3 }); // adjust zoom here
-					      const canvas = document.createElement("canvas");
-					      const context = canvas.getContext("2d");
-					      canvas.height = viewport.height;
-					      canvas.width = viewport.width;
-					
-					      // Render page
-					      await page.render({ canvasContext: context, viewport }).promise;
-					
-					      // Add spacing between pages
-					      canvas.style.display = "block";
-					      canvas.style.margin = "0 auto 20px auto";
-					
-					      cvContent.appendChild(canvas);
-					    }
-					  }
-					});
-					</script>
 
 
 
@@ -549,6 +492,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
 
 
 

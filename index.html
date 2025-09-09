@@ -106,11 +106,16 @@
 					</section>
 						
 					<style>.videos {
-						  	.videos { display: grid; gap: 2rem; }
-
+						  	.videos {
+							  display: grid;
+							  gap: 2rem;
+							}
+							
+							/* wrapper ensures all players scale the same */
 							.video-wrapper {
+							  position: relative;
 							  width: 100%;
-							  max-width: 900px;
+							  max-width: 900px;   /* optional max width */
 							  margin: 0 auto;
 							  aspect-ratio: 16 / 9;   /* modern browsers */
 							  background: #000;
@@ -118,13 +123,18 @@
 							  overflow: hidden;
 							}
 							
+							/* make the actual player fill the wrapper */
 							.video-wrapper iframe,
 							.video-wrapper video {
+							  position: absolute;
+							  top: 0;
+							  left: 0;
 							  width: 100%;
 							  height: 100%;
 							  border: 0;
 							  display: block;
-							}	
+							}
+
 					</style>
 				
 
@@ -146,7 +156,7 @@
 							<p class="subtitle">Research showcase video by Greg Basky at the Canadian Light Source in which I explain my research on biomimetic auxiliary channels.</p>
 						</div>
 					
-					    <div class="videos">
+					    <div class="video-wrapper">
 					      <h3>Interview: Global News Regina</h3>
 					      <iframe src="https://globalnews.ca/video/embed/11208303/" allowfullscreen scrolling="no"></iframe>
 					      <p class="subtitle">Interview with Brendan Purdy from Global News Regina, discussing my research on biomimetic auxiliary channels.</p>
@@ -572,6 +582,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
 
 
 

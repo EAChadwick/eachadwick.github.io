@@ -104,7 +104,26 @@
 
 						</div>
 					</section>
-
+						
+					<style>.videos {
+						  display: grid;
+						  gap: 2rem;
+						}
+						
+						.video iframe {
+						  width: 100%;
+						  max-width: 800px;
+						  aspect-ratio: 16 / 9;  /* keeps video proportional */
+						  border-radius: 8px;
+						}
+						
+						.video .subtitle {
+						  font-size: 0.9rem;
+						  color: #666;
+						  margin-top: 0.5rem;
+						}
+					</style>
+				
 
 					<section id="media">
 					  <header class="major">
@@ -552,6 +571,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
 
 
 

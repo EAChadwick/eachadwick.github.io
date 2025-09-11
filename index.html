@@ -111,6 +111,44 @@
 						</div>
 					</section>
 						
+					<script>
+					  const pubRow = document.getElementById("pub-row");
+					  const pubs = pubRow.querySelectorAll(".work-item");
+					  const cutoff = 6;
+					
+					  if (pubs.length > cutoff) {
+					    // Hide everything after the 6th
+					    for (let i = cutoff; i < pubs.length; i++) {
+					      pubs[i].style.display = "none";
+					    }
+					
+					    // Create the button
+					    const toggleBtn = document.createElement("button");
+					    toggleBtn.textContent = "Show more";
+					    toggleBtn.style.margin = "1rem auto";
+					    toggleBtn.style.display = "block";
+					
+					    // Insert button after 6th publication
+					    pubs[cutoff - 1].insertAdjacentElement("afterend", toggleBtn);
+					
+					    let expanded = false;
+					    toggleBtn.addEventListener("click", () => {
+					      expanded = !expanded;
+					      for (let i = cutoff; i < pubs.length; i++) {
+					        pubs[i].style.display = expanded ? "block" : "none";
+					      }
+					      toggleBtn.textContent = expanded ? "Show less" : "Show more";
+					
+					      // Move button to end if expanded
+					      if (expanded) {
+					        pubRow.appendChild(toggleBtn);
+					      } else {
+					        pubs[cutoff - 1].insertAdjacentElement("afterend", toggleBtn);
+					      }
+					    });
+					  }
+					</script>
+						
 					<style>.videos {
 						  	.videos {
 							  display: grid;
@@ -607,6 +645,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
 
 
 

@@ -65,7 +65,7 @@
 				<!-- Two -->
 					<section id="two">
 						<h2>Recent Publications</h2>
-						<div class="pub-row">
+						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 							  <a href="https://doi.org/10.1016/j.jpowsour.2025.238031" target="_blank"><img src="images/thumbs/JPS2025.png" alt="" class="image fit"/></a>
 							  <h3><a href="https://doi.org/10.1016/j.jpowsour.2025.238031" target="_blank">Dominating impact of microporous layer thickness on gas diffusion layer oxygen transport resistance</h3></a>
@@ -102,52 +102,15 @@
 							  <p><b>Authors: </b><i>Eric A Chadwick, Takaya Suzuki, Michael G George, David A Romero, Cristina Amon, Thomas K Waddell, Golnaz Karoubi, Aimy Bazylak</i> <br /><b>Published: </b><i>20 April 2021, PLoS Computational Biology</i></p>
 							</article>
 
-							<article class="col-6 col-12-xsmall work-item">
+							<!----<article class="col-6 col-12-xsmall work-item">
 							  <a href="https://avestia.com/FFHMT2018_Proceedings/files/paper/FFHMT_168.pdf" target="_blank"><img src="images/thumbs/FFHMT2018.png" alt="" class="image fit"/></a>
 							  <h3><a href="https://avestia.com/FFHMT2018_Proceedings/files/paper/FFHMT_168.pdf" target="_blank" >Two-phase flow behaviour in airlift pumps</h3></a>
 							  <p><b>Authors: </b><i>Rashal Abed, Eric Chadwick, Wael H. Ahmed</i> <br /><b>Published: </b><i>09 June 2018, Proceedings of the 5th International conference of fluid flow, heat and mass transfer (FFHMT'18)</i></p>
-							</article>
+							</article>--->
 
 						</div>
 					</section>
 						
-					<script>
-					  const pubRow = document.getElementById("pub-row");
-					  const pubs = pubRow.querySelectorAll(".work-item");
-					  const cutoff = 6;
-					
-					  if (pubs.length > cutoff) {
-					    // Hide everything after the 6th
-					    for (let i = cutoff; i < pubs.length; i++) {
-					      pubs[i].style.display = "none";
-					    }
-					
-					    // Create the button
-					    const toggleBtn = document.createElement("button");
-					    toggleBtn.textContent = "Show more";
-					    toggleBtn.style.margin = "1rem auto";
-					    toggleBtn.style.display = "block";
-					
-					    // Insert button after 6th publication
-					    pubs[cutoff - 1].insertAdjacentElement("afterend", toggleBtn);
-					
-					    let expanded = false;
-					    toggleBtn.addEventListener("click", () => {
-					      expanded = !expanded;
-					      for (let i = cutoff; i < pubs.length; i++) {
-					        pubs[i].style.display = expanded ? "block" : "none";
-					      }
-					      toggleBtn.textContent = expanded ? "Show less" : "Show more";
-					
-					      // Move button to end if expanded
-					      if (expanded) {
-					        pubRow.appendChild(toggleBtn);
-					      } else {
-					        pubs[cutoff - 1].insertAdjacentElement("afterend", toggleBtn);
-					      }
-					    });
-					  }
-					</script>
 						
 					<style>.videos {
 						  	.videos {
@@ -645,6 +608,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	</body>
 
 </html>
+
 
 
 
